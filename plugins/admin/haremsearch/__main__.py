@@ -1,15 +1,13 @@
 import json
 import time
 import asyncio
-queryid=0
-ressarrl=[]
-pagearr=[]
 from userge import userge, Message, config, filters
+
+
 @userge.on_cmd("hws", about="harem search waifu")
 async def revhws(message: Message):
-  global cancontinue
-  global ressarrl
-  global queryid
+  print("here")
+  print(message)
   if(message.outgoing) and (".hs" in message.text):
     
     charname=message.text.replace(".hs ", "")
@@ -46,9 +44,6 @@ async def revhws(message: Message):
     
 @userge.on_cmd("hs", about="hharem search husbando")
 async def revhs(message: Message):
-  global cancontinue
-  global ressarrl
-  global queryid
   if(message.outgoing) and (".hs" in message.text):
     
     charname=message.text.replace(".hs ", "")
