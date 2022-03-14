@@ -8,9 +8,9 @@ from userge import userge, Message, config, filters
 async def revhws(message: Message):
   print("here")
   print(message)
-  if(message.outgoing) and (".hs" in message.text):
+  if(message.outgoing) and (".hws" in message.text):
     
-    charname=message.text.replace(".hs ", "")
+    charname=message.text.replace(".hws ", "")
     await message.edit("Searching - " + charname)
     print(charname)
     currpage=0
